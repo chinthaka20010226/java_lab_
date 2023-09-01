@@ -1,0 +1,7 @@
+javac -d "<direction>" Calculator.java  ----------> pkgA
+
+javac -d "<direction>" AccessDemo.java  ----------> pkgB
+
+javac AccessDemo.java
+
+java pkgB.AccessDemo
