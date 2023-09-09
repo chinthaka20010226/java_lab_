@@ -2,18 +2,20 @@ public class StaticDemo{
      //instance variable
      int num1;
 
-     //class variable
+     //class / static variable
      static int num2;
 
-     public StaticDemo(int num1,int num2){
+     public StaticDemo(int num1){
           this.num1 = num1;
-          this.num2 = num2;
 
      }
 
      public static void main(String args[]){
-          StaticDemo s1 = new StaticDemo(15,17);
-          StaticDemo s2 = new StaticDemo(22,28);
+          StaticDemo s1 = new StaticDemo(15);
+          StaticDemo.num2 = 17;
+
+          StaticDemo s2 = new StaticDemo(22);
+          StaticDemo.num2 = 28;
 
           //s1
           System.out.println(s1.num1+" "+StaticDemo.num2); //15 28
